@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chioma Vera  | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">CV<span> . </span></div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Chioma Vera</span></h1>
+    <p>A passionate web developer</p>
+    <a href="#projects">View my work</a>
+  </div>
+  <div class="hero-image">
+    <img src="{{ url_for('static', filename='myphoto.jpg') }}"
+         alt="Chioma Vera"/>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer with a
+    love for clean and bold design.I enjoy the
+    challenge of making complex idea simple and turning sketches into
+    fully functional,responsive website.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">🐍 Python</div>
+    <div class="skill-card">⚗️ Flask</div>
+    <div class="skill-card">🌐 HTML & CSS</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>Landing Website</h3>
+    <p>A responsive landing page built with HTML and CSS.</p>
+    <a href="#">View Project →</a>
+  </div>
+</section>
+
+
+<!-- CONTACT FORM-->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="/contact" method="POST">
+         <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="Sumbit">Send</button>
+
+    </form>
+
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ikechukwu Chioma Vera. All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/chioma vera" target="_blank">LinkedIn</a>
+    <a href="mailto:chiomaikechukwu007@email@gmail.com">Email Me</a>
+  </div>
+</footer>
+
+
+<body>
+
+</body>
+</html>
